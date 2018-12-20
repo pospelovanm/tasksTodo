@@ -1,0 +1,36 @@
+.comments-block {
+  height: 500px;
+  box-shadow: 2px 2px lightgray;
+
+ }
+.comments-list{
+  height: 350px;
+  overflow-y: scroll;
+}
+.comment-container {
+  display: flex;
+}
+.comment {
+  display: inline-block;
+  padding-left: 20px;
+  width: 70%;
+}
+.square{
+  top: 0;
+  height: 50px;
+  width: 50px;
+  background-color: #265;
+  display: inline-block;
+}
+.comment_input {
+ margin-top: 40px;
+  width: 100%;
+}
+.comment_input textarea {
+  float: right;
+  margin-right: 20px;
+}
+.input-square {
+  border-right: 10px;
+  background-color: gray;
+}

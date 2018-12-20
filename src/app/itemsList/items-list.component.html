@@ -1,0 +1,28 @@
+
+  <div class="card items-block">
+    <div class="card-body">
+      <h1>Items</h1>
+      <div class="row new-item">
+        <input type="text" class="form-control col-md-8" placeholder="Type name here..." [(ngModel)]="itemInput">
+        <button type="button" class="btn btn-success col-md-2 button-item" (click) = 'addTodo(itemInput)'>Add new</button>
+      </div>
+      <div *ngFor="let listItem of listItems" (click)="chooseItemToComment(listItem.id)">
+        <div [ngClass]="listItem.id==currentItemId ? 'selected' : 'not-selected'" >
+          <div class="listTodo">
+            <div class="item">
+              <a>{{listItem.item}}</a>
+              <span class="badge badge-success">{{listItem.numberOfComments}}</span>
+            </div>
+            <div class="delete-button">
+              <button type="submit" class="btn btn-outline-danger button-delete" (click)= "removeItem(listItem.id)">Delete</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+

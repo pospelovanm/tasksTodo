@@ -1,0 +1,46 @@
+
+.items-block {
+  height: 500px;
+  overflow-y: scroll;
+  box-shadow: 2px 2px lightgray;
+}
+.button-item {
+  margin-left: 10%;
+}
+.listTodo {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.selected{
+  border-left: 3px solid red;
+  margin-left: -20px;
+  padding-left: 20px;
+}
+.not-selected{
+  border-left: 3px solid rgba(255, 0, 0, 0);
+}
+
+.item{
+  display: flex;
+  padding: 10px;
+  align-items: center;
+}
+.delete-button{
+  display: flex;
+  align-items: center;
+}
+.badge {
+  position:relative;
+  width: 30px;
+  height: 18px;
+  margin-left: 5px;
+  border-radius: 30%;
+}
+
+.new-item {
+  margin-bottom: 20px;
+}
+

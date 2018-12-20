@@ -1,0 +1,27 @@
+<div  *ngIf="itemId != undefined">
+  <div class="card comments-block" id="comments-block">
+    <div class="card-body">
+      <div class="comments-list">
+        <h1>Comments</h1>
+        <div *ngFor="let listComment of listComments">
+          <div class="comment-container">
+            <div class="square" ></div>
+            <div class="comment">{{listComment.comment}}</div>
+          </div>
+          <hr>
+        </div>
+      </div>
+
+      <div>
+        <div class="comment_input">
+          <div class="square input-square" ></div>
+          <textarea rows="2" cols="43" [(ngModel)]="commentInput" (keyup)="addComment($event, commentInput)"></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
